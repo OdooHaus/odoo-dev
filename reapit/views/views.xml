@@ -46,8 +46,8 @@
    
     <!-- menu categories -->
     
-    <!-- <menuitem name="Menu 1" id="reapit.menu_1" parent="reapit.menu_root"/>
-    <menuitem name="Menu 2" id="reapit.menu_2" parent="reapit.menu_root"/> -->
+    <menuitem name="Menu 1" id="reapit.menu_1" parent="reapit.menu_root"/>
+    <menuitem name="Menu 2" id="reapit.menu_2" parent="reapit.menu_root"/>
    
     <!-- actions -->
     
