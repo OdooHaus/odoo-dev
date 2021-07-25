@@ -34,8 +34,17 @@ class ReapitIntegration(models.Model):
         response = requests.request("GET", url, headers=headers, data=payload)
         data = json.loads(response.text)
         return data
+    
+    def getHappyTenantData(self,url,apiToken):
+        payload={}
+        headers = {
+            'Authorization': apiToken
+        }
+        response = requests.request("POST", url, headers=headers, data=payload)
+        data = json.loads(response.text)
+        return data
 
 
 if __name__ == "__main__":
-    token = ReapitIntegration().getData('2020-01-31',"https://platform.reapit.cloud/offers/?PageNumber=7&PageSize=2000")
+    token = ReapitIntegration().getData('https://happytenant.app/api/payments/list?start_date=01-01-2020&end_date=01-01-2021',"ht_live_io3LEXLsnPQoipk6PqvnQQ==")
     print(token)
