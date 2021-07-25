@@ -45,6 +45,6 @@ class ReapitIntegration(models.Model):
         return data
 
 
-if __name__ == "__main__":
-    token = ReapitIntegration().getData('https://happytenant.app/api/payments/list?start_date=01-01-2020&end_date=01-01-2021',"ht_live_io3LEXLsnPQoipk6PqvnQQ==")
-    print(token)
+# if __name__ == "__main__":
+#     token = ReapitIntegration().getData('https://happytenant.app/api/payments/list?start_date=01-01-2020&end_date=01-01-2021',"ht_live_io3LEXLsnPQoipk6PqvnQQ==")
+#     print(token)
